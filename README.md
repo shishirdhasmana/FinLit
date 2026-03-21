@@ -212,6 +212,9 @@ Example questions to try:
 
 ---
 
+🔗 **Live Demo:** https://fin-lit-kappa.vercel.app/
+🔗 **Backend API:** https://finlit-backend-l1f4.onrender.com
+
 ## 👨‍💻 Author
 
 **Shishir Dhasmana**  
