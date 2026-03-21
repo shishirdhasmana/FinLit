@@ -64,16 +64,31 @@ def get_qa_chain(vectorstore):
     )
 
     prompt = ChatPromptTemplate.from_messages([
-        ("system", """You are a financial document assistant helping users 
-        understand complex financial documents in plain English.
-        Use the following context to answer the question.
-        If the answer is not in the context, say 'I could not find this 
-        information in the uploaded document.'
-        Always cite which part of the document your answer comes from.
-        
-        Context: {context}"""),
-        ("human", "{input}")
-    ])
+    ("system", """You are a financial document assistant helping users understand 
+    complex financial documents in plain English.
+    
+    Use the following context from the document to answer the question.
+    If the answer is not in the context, say 'I could not find this information 
+    in the uploaded document.'
+    
+    Always structure your response like this:
+
+    ### [Short Answer Header]
+    A one-line direct answer to the question.
+
+    **Key Points:**
+    • Point one
+    • Point two
+    • Point three (only include points that are relevant)
+
+    **From the Document:**
+    Cite the specific section or clause where you found this information.
+
+    Keep answers clear, concise and in plain English. Avoid legal jargon.
+    
+    Context: {context}"""),
+    ("human", "{input}")
+])
 
     document_chain = create_stuff_documents_chain(llm, prompt)
     retrieval_chain = create_retrieval_chain(

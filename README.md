@@ -73,7 +73,7 @@ finlit-qa/
 │   ├── rag.py              # LangChain RAG pipeline
 │   ├── .env                # API keys (not committed)
 │   ├── requirements.txt    # Python dependencies
-│   └── uploads/            # Temporarily stored PDFs
+│   └── check_models.py     # Checks for recent models
 ├── frontend/
 │   ├── src/
 │   │   └── App.jsx         # Main React component
