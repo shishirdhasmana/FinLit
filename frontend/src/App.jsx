@@ -2,7 +2,7 @@ import { useState, useRef, useEffect, useCallback } from "react";
 import axios from "axios";
 import ReactMarkdown from "react-markdown";
 
-const API = "http://localhost:5000";
+const API = "https://finlit-backend-l1f4.onrender.com";
 
 export default function App() {
   const [file, setFile] = useState(null);
