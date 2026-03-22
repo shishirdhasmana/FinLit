@@ -5,7 +5,7 @@ from flask_cors import CORS
 from rag import process_document, answer_question
 
 app = Flask(__name__)
-CORS(app,origins=["https://finlit-backend-l1f4.onrender.com","http://localhost:5173"])
+CORS(app,origins=["https://fin-lit-kappa.vercel.app","http://localhost:5173"])
 
 UPLOAD_FOLDER = "./uploads"
 os.makedirs(UPLOAD_FOLDER,exist_ok=True)
