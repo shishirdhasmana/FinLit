@@ -96,7 +96,7 @@ finlit-qa/
 ```bash
 # Clone the repository
 git clone https://github.com/shishirdhasmana/FinLit.git
-cd finlit-qa/backend
+cd FinLit/backend
 
 # Create and activate virtual environment
 python -m venv .venv
