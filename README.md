@@ -95,7 +95,7 @@ finlit-qa/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/finlit-qa.git
+git clone https://github.com/shishirdhasmana/FinLit.git
 cd finlit-qa/backend
 
 # Create and activate virtual environment
